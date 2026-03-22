@@ -10,6 +10,14 @@ Amadla is an infrastructure automation ecosystem that simplifies provisioning of
 
 Most infrastructure tools are **environment-centric**: settings live near the environment, and requirements are scattered across documentation and tribal knowledge. Amadla inverts this to be **resource-centric** — each resource carries its own schema-validated configuration. The same entity that describes an application drives every tool in the chain, from provisioning to validation.
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AmadlaOrg/.github/master/profile/assets/amadla_concept_black.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AmadlaOrg/.github/master/profile/assets/amadla_concept_white.png">
+  <img src="https://raw.githubusercontent.com/AmadlaOrg/.github/master/profile/assets/amadla_concept_white.png" alt="Traditional vs Amadla — config imposed top-down vs requirements bubble up via .hery contracts"/>
+</picture>
+</p>
+
 Amadla is best suited for **1–20 servers**, where it provides production-grade high availability with a fraction of the complexity and overhead of tools like Kubernetes.
 
 <p align="center">
