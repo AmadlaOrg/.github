@@ -1,0 +1,68 @@
+direction: right
+
+raise: {
+  label: "raise"
+  subtitle: "Provision"
+  shape: rectangle
+  style: {
+    fill: "#4A90D9"
+    font-color: "#FFFFFF"
+    stroke: "#3A7BC8"
+    border-radius: 8
+    bold: true
+  }
+}
+
+lay: {
+  label: "lay"
+  subtitle: "Install"
+  shape: rectangle
+  style: {
+    fill: "#5BA55B"
+    font-color: "#FFFFFF"
+    stroke: "#4A944A"
+    border-radius: 8
+    bold: true
+  }
+}
+
+enjoin: {
+  label: "enjoin"
+  subtitle: "Configure"
+  shape: rectangle
+  style: {
+    fill: "#E8A838"
+    font-color: "#FFFFFF"
+    stroke: "#D09730"
+    border-radius: 8
+    bold: true
+  }
+}
+
+weaver: {
+  label: "weaver"
+  subtitle: "Template"
+  shape: rectangle
+  style: {
+    fill: "#D45B5B"
+    font-color: "#FFFFFF"
+    stroke: "#C34A4A"
+    border-radius: 8
+    bold: true
+  }
+}
+
+judge: {
+  label: "judge"
+  subtitle: "Validate"
+  shape: rectangle
+  style: {
+    fill: "#8B5CC0"
+    font-color: "#FFFFFF"
+    stroke: "#7A4BAF"
+    border-radius: 8
+    bold: true
+  }
+}
+
+raise -> lay -> enjoin -> weaver -> judge

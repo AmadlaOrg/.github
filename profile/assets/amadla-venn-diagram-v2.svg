@@ -1,0 +1,86 @@
+<svg width="660" height="580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .heading { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px; fill: #1a1a1a; font-weight: 700; letter-spacing: 0.5px; }
+      .amadla-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 20px; fill: #fff; font-weight: 800; letter-spacing: 0.5px; }
+      .tool { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; fill: #444; }
+      .tool-overlap { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 13px; fill: #2a2a2a; font-weight: 500; }
+    </style>
+
+    <!-- Circle gradients -->
+    <radialGradient id="grad-cm" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FF7B6B" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#D94E3F" stop-opacity="0.25" />
+    </radialGradient>
+    <radialGradient id="grad-iac" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#4DA6E8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#2674B0" stop-opacity="0.25" />
+    </radialGradient>
+    <radialGradient id="grad-ib" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#5CC88A" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#2E9E5E" stop-opacity="0.25" />
+    </radialGradient>
+
+    <!-- Amadla badge gradient -->
+    <radialGradient id="grad-badge" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#4A5568" />
+      <stop offset="100%" stop-color="#2D3748" />
+    </radialGradient>
+
+    <!-- Soft shadow for badge -->
+    <filter id="badge-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- Circles with gradient fills and strokes -->
+  <!-- Configuration Management (top-left) -->
+  <circle cx="250" cy="225" r="155" fill="url(#grad-cm)" stroke="#D94E3F" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Infrastructure as Code (top-right) -->
+  <circle cx="410" cy="225" r="155" fill="url(#grad-iac)" stroke="#2674B0" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Image Building (bottom-center) -->
+  <circle cx="330" cy="365" r="155" fill="url(#grad-ib)" stroke="#2E9E5E" stroke-width="1.5" stroke-opacity="0.3" />
+
+  <!-- Heading labels outside circles -->
+  <text x="132" y="52" text-anchor="middle" class="heading">Configuration</text>
+  <text x="132" y="70" text-anchor="middle" class="heading">Management</text>
+
+  <text x="528" y="52" text-anchor="middle" class="heading">Infrastructure</text>
+  <text x="528" y="70" text-anchor="middle" class="heading">as Code (IaC)</text>
+
+  <text x="330" y="555" text-anchor="middle" class="heading">Image Building</text>
+
+  <!-- Tools in CM only zone -->
+  <text x="172" y="195" text-anchor="middle" class="tool">Chef</text>
+  <text x="172" y="215" text-anchor="middle" class="tool">CFEngine</text>
+
+  <!-- Tools in IaC only zone -->
+  <text x="488" y="185" text-anchor="middle" class="tool">Terraform</text>
+  <text x="488" y="205" text-anchor="middle" class="tool">OpenTofu</text>
+  <text x="488" y="225" text-anchor="middle" class="tool">Pulumi</text>
+  <text x="488" y="245" text-anchor="middle" class="tool">AWS CF</text>
+
+  <!-- Tools in Image Building only zone -->
+  <text x="330" y="455" text-anchor="middle" class="tool">Packer</text>
+  <text x="330" y="475" text-anchor="middle" class="tool">Buildah</text>
+
+  <!-- CM + IaC overlap (top center) -->
+  <text x="330" y="148" text-anchor="middle" class="tool-overlap">Ansible</text>
+  <text x="330" y="168" text-anchor="middle" class="tool-overlap">Puppet</text>
+  <text x="330" y="188" text-anchor="middle" class="tool-overlap">Salt</text>
+
+  <!-- CM + Image Building overlap (bottom-left) -->
+  <text x="240" y="358" text-anchor="middle" class="tool-overlap">Vagrant</text>
+  <text x="240" y="378" text-anchor="middle" class="tool-overlap">NixOS</text>
+
+  <!-- IaC + Image Building overlap (bottom-right) -->
+  <text x="420" y="368" text-anchor="middle" class="tool-overlap">Docker</text>
+
+  <!-- Amadla badge at center of all three -->
+  <ellipse cx="330" cy="280" rx="48" ry="22" fill="url(#grad-badge)" filter="url(#badge-shadow)" />
+  <text x="330" y="287" text-anchor="middle" class="amadla-text">Amadla</text>
+</svg>
