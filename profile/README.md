@@ -40,20 +40,20 @@ The pipeline flows through these stages:
 
 | Tool | Role |
 |------|------|
-| **[amadla](https://github.com/AmadlaOrg/amadla)** | Orchestrator — executes Pipeline entities, coordinates the ecosystem |
-| **[hery](https://github.com/AmadlaOrg/hery)** | Data storage — entity management with schema validation, Git versioning, SQLite caching |
-| **[doorman](https://github.com/AmadlaOrg/doorman)** | Secrets management — resolves secrets from pluggable backends (Vault, AWS, KeePassXC, etc.) |
-| **[raise](https://github.com/AmadlaOrg/raise)** | Infrastructure provisioner — provisions VMs and cloud resources via plugins |
-| **[lay](https://github.com/AmadlaOrg/lay)** | Installer — installs packages, applications, and language runtimes |
-| **[enjoin](https://github.com/AmadlaOrg/enjoin)** | System configurator — manages users, services, cron, firewall, security |
-| **[weaver](https://github.com/AmadlaOrg/weaver)** | Template generator — renders config files using pluggable template engines |
-| **[judge](https://github.com/AmadlaOrg/judge)** | Validator — checks requirements, cross-entity conflicts, and drift detection |
-| **[unravel](https://github.com/AmadlaOrg/unravel)** | Discovery — discovers existing system state and outputs it as entities |
-| **[waiter](https://github.com/AmadlaOrg/waiter)** | Deployment — blue-green, canary, and rolling deployment strategies |
-| **[conduct](https://github.com/AmadlaOrg/conduct)** | Multi-server orchestration — coordinates tools across distributed nodes |
-| **[dryrun](https://github.com/AmadlaOrg/dryrun)** | Safe testing — tests settings with auto-revert (e.g., prevents SSH lockout) |
-| **[lighthouse](https://github.com/AmadlaOrg/lighthouse)** | Notifications — alerting via webhook, SMS, email, and REST API plugins |
-| **[garbage](https://github.com/AmadlaOrg/garbage)** | Cleanup — tracks and removes what's no longer needed |
+| 🐇 **[amadla](https://github.com/AmadlaOrg/amadla)** | Orchestrator — executes Pipeline entities, coordinates the ecosystem |
+| 🐻 **[hery](https://github.com/AmadlaOrg/hery)** | Data storage — entity management with schema validation, Git versioning, SQLite caching |
+| 🚪 **[doorman](https://github.com/AmadlaOrg/doorman)** | Secrets management — resolves secrets from pluggable backends (Vault, AWS, KeePassXC, etc.) |
+| 🏗️ **[raise](https://github.com/AmadlaOrg/raise)** | Infrastructure provisioner — provisions VMs and cloud resources via plugins |
+| 📥 **[lay](https://github.com/AmadlaOrg/lay)** | Installer — installs packages, applications, and language runtimes |
+| 🤝 **[enjoin](https://github.com/AmadlaOrg/enjoin)** | System configurator — manages users, services, cron, firewall, security |
+| 🧶 **[weaver](https://github.com/AmadlaOrg/weaver)** | Template generator — renders config files using pluggable template engines |
+| 🧑‍⚖️ **[judge](https://github.com/AmadlaOrg/judge)** | Validator — checks requirements, cross-entity conflicts, and drift detection |
+| 🔬 **[unravel](https://github.com/AmadlaOrg/unravel)** | Discovery — discovers existing system state and outputs it as entities |
+| 🍽️ **[waiter](https://github.com/AmadlaOrg/waiter)** | Deployment — blue-green, canary, and rolling deployment strategies |
+| 🐙 **[conduct](https://github.com/AmadlaOrg/conduct)** | Multi-server orchestration — coordinates tools across distributed nodes |
+| 💨 **[dryrun](https://github.com/AmadlaOrg/dryrun)** | Safe testing — tests settings with auto-revert (e.g., prevents SSH lockout) |
+| ⛯ **[lighthouse](https://github.com/AmadlaOrg/lighthouse)** | Notifications — alerting via webhook, SMS, email, and REST API plugins |
+| 🗑 **[garbage](https://github.com/AmadlaOrg/garbage)** | Cleanup — tracks and removes what's no longer needed |
 
 <h2>Get Started</h2>
 
