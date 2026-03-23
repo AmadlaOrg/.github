@@ -18,7 +18,7 @@ Most infrastructure tools are **environment-centric**: settings live near the en
 </picture>
 </p>
 
-Amadla is best suited for **1–20 servers**, where it provides production-grade high availability with a fraction of the complexity and overhead of tools like Kubernetes.
+The Amadla ecosystem covers four domains that are traditionally handled by separate, disconnected tools: **Configuration Management**, **Infrastructure as Code**, **Image Building**, and **Secrets Management**. Instead of stitching these together yourself, Amadla unifies them through a common entity model and plugin-driven pipeline.
 
 <p align="center">
 <picture>
@@ -32,17 +32,8 @@ Amadla is best suited for **1–20 servers**, where it provides production-grade
 
 Amadla follows the UNIX philosophy: small, focused CLI tools that each do one thing well and communicate via stdin/stdout with structured data. You can replace, skip, or extend any tool in the chain.
 
-Configuration is defined using [HERY](https://github.com/AmadlaOrg/hery) (Hierarchical Entity Relational YAML) — structured, schema-validated YAML files stored in Git. Entities describe your desired state and can reference and inherit from each other through deep merge. For example, a networking entity attached to an application can inform the HTTP server and automatically open the right firewall ports.
+Configuration is defined using [HERY](https://github.com/AmadlaOrg/hery) (Hierarchical Entity Relational YAML) — simple, structured, schema-validated YAML files stored in Git. HERY extends YAML with just five reserved properties (`_type`, `_extends`, `_meta`, `_body`, `_requires`), keeping the format easy to read and write. Entities describe your desired state and can reference and inherit from each other through deep merge. For example, a networking entity attached to an application can inform the HTTP server and automatically open the right firewall ports.
 
-The pipeline flows through these stages:
-
-- **[hery](https://github.com/AmadlaOrg/hery)** — Define and query entity configurations
-- **[doorman](https://github.com/AmadlaOrg/doorman)** — Resolve secrets (Vault, AWS, KeePassXC, and more)
-- **[raise](https://github.com/AmadlaOrg/raise)** — Provision infrastructure (VMs, cloud instances)
-- **[lay](https://github.com/AmadlaOrg/lay)** — Install packages, applications, and language runtimes
-- **[enjoin](https://github.com/AmadlaOrg/enjoin)** — Configure system state (users, services, cron, security)
-- **[weaver](https://github.com/AmadlaOrg/weaver)** — Generate configuration files from templates
-- **[judge](https://github.com/AmadlaOrg/judge)** — Validate and audit the result
 
 <h2>All Tools</h2>
 
